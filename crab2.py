@@ -15,8 +15,8 @@ config.Data.inputDBS = 'phys03'
 
 config.Data.ignoreLocality = True
 config.Data.splitting = 'FileBased'
-config.Data.unitsPerJob = 1
-NJOBS = 100  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
+config.Data.unitsPerJob = 10
+NJOBS = 10  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
 config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 config.Data.outLFNDirBase = '/store/user/%s/' % (getUsernameFromSiteDB())
 config.Data.publication = True
